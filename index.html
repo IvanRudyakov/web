@@ -31,9 +31,27 @@
           of ourselves.</figcaption>
       </figure>
     </section>
+
+    <section id="quadratic-widget">
+      <h2>Quadratic Formula Solver</h2>
+      <label>a <input type="number" id="coefA" value="1"></label>
+      <label>b <input type="number" id="coefB" value="0"></label>
+      <label>c <input type="number" id="coefC" value="0"></label>
+      <button onclick="solveQuadratic()">Solve</button>
+      <div id="quadResult"></div>
+    </section>
+
+    <section id="pythagorean-widget">
+      <h2>Pythagorean Calculator</h2>
+      <label>a <input type="number" id="sideA" value="3"></label>
+      <label>b <input type="number" id="sideB" value="4"></label>
+      <button onclick="calcHypotenuse()">Calculate c</button>
+      <div id="pythResult"></div>
+    </section>
   </main>
   <footer>
     <p>&copy; 2025 Cyclomatic Extension</p>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>

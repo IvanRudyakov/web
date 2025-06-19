@@ -74,6 +74,8 @@ footer {
 .hero {
   text-align: center;
   padding: 1rem 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .hero h1 {
@@ -96,6 +98,21 @@ footer {
 
 .hero img:hover {
   transform: scale(1.05);
+}
+
+/* Fade-in effect triggered by JavaScript */
+.fade-in {
+  opacity: 1 !important;
+}
+
+/* Logo spin animation */
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: logo-spin 1s linear;
 }
 
 .video-list {
@@ -136,4 +153,40 @@ footer {
   font-family: var(--mono-font);
   font-size: 1rem;
   color: var(--primary-color);
+}
+
+/* Quadratic formula widget styles */
+#quadratic-widget {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #e9ecef;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#quadratic-widget label {
+  margin-right: 0.5rem;
+}
+
+#quadResult {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Pythagorean widget styles */
+#pythagorean-widget {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #e9ecef;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#pythagorean-widget label {
+  margin-right: 0.5rem;
+}
+
+#pythResult {
+  margin-top: 0.5rem;
+  font-weight: bold;
 }
