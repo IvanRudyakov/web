@@ -1,0 +1,139 @@
+/* Base styles for Cyclomatic Extension website */
+
+:root {
+  --primary-color: #264653;
+  --accent-color: #2a9d8f;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --body-font: 'Nunito', sans-serif;
+  --heading-font: 'Merriweather', serif;
+  --mono-font: 'Fira Code', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+header {
+  background: linear-gradient(to right, var(--primary-color), #1b3b4d);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: var(--heading-font);
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+main {
+  padding: 1rem;
+  font-family: var(--body-font);
+}
+
+footer {
+  background: linear-gradient(to right, var(--primary-color), #1b3b4d);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-family: var(--heading-font);
+}
+
+.hero {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.hero h1 {
+  font-family: var(--heading-font);
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  margin-bottom: 0.5rem;
+}
+
+.hero img {
+  width: 200px;
+  margin-top: 1rem;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+  transition: transform 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+.video-list {
+  list-style: none;
+  padding: 0;
+}
+
+.video-list li {
+  background: #e9ecef;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-list h2 {
+  font-family: var(--heading-font);
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.video-list img {
+  width: 180px;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.quotes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.quotes-list li {
+  background: #e9ecef;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border-left: 4px solid #2a9d8f;
+  font-family: var(--mono-font);
+  font-size: 1rem;
+  color: var(--primary-color);
+}
