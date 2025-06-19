@@ -9,3 +9,7 @@ This repository contains the Cyclomatic Extension website, a static site prepare
    git clone <repo-url>
    ```
 2. Open `index.html` in your browser to access the homepage.
+3. Each page loads its own JavaScript file for animations.
+4. The homepage now contains two small widgets: one that solves quadratic
+   equations and another that uses the Pythagorean theorem. Make sure
+   JavaScript is enabled to try them out.
