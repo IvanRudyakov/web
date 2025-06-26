@@ -13,3 +13,5 @@ This repository contains the Cyclomatic Extension website, a static site prepare
 4. The homepage now contains two small widgets: one that solves quadratic
    equations and another that uses the Pythagorean theorem. Make sure
    JavaScript is enabled to try them out.
+5. You can toggle between light and dark themes using the button in the header.
+6. On the quotes page, click "Show Random Quote" for a surprise bit of inspiration.
