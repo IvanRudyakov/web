@@ -10,6 +10,13 @@
   --mono-font: 'Fira Code', monospace;
 }
 
+body.dark-theme {
+  --primary-color: #90caf9;
+  --accent-color: #2196f3;
+  --background-color: #121212;
+  --text-color: #f0f0f0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -33,6 +40,7 @@ header {
   color: white;
   display: flex;
   align-items: center;
+  gap: 1rem;
   padding: 0.5rem 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -55,6 +63,21 @@ nav a {
 nav a:hover {
   text-decoration: underline;
   color: var(--accent-color);
+}
+
+#theme-toggle {
+  margin-left: auto;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--heading-font);
+}
+
+#theme-toggle:hover {
+  background: var(--primary-color);
 }
 
 main {
@@ -98,6 +121,11 @@ footer {
 
 .hero img:hover {
   transform: scale(1.05);
+}
+
+.mission {
+  font-style: italic;
+  margin-top: 0.5rem;
 }
 
 /* Fade-in effect triggered by JavaScript */
@@ -189,4 +217,27 @@ footer {
 #pythResult {
   margin-top: 0.5rem;
   font-weight: bold;
+}
+
+#random-quote {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #e9ecef;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#random-quote button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--heading-font);
+}
+
+#random-quote button:hover {
+  background: var(--primary-color);
 }
